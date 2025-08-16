@@ -22,8 +22,8 @@ const SignUp = () => {
               <input type="email" id="email" name="email" placeholder='Enter your email' />
             </div>
             <div className='signup-form-group'>
-              <label htmlFor="password">Password:</label>
-              <input type="password" id="password" name="password" placeholder='Enter your password'/><RiLockPasswordFill/>
+              <label htmlFor="password">Password:</label><RiLockPasswordFill/>
+              <input type="password" id="password" name="password" placeholder='Enter your password'/>
             </div>
             <div className='signup-form-group'>
               <label htmlFor="confirm-password">Confirm Password:</label>
