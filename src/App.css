@@ -1,0 +1,17 @@
+.list-group-item div a{
+    color: white;
+    text-decoration: none; 
+}
+.list-group-item div a:hover{
+    color:rgb(249, 16, 16);
+}
+
+.list-group-item div:hover {
+    margin: 0 auto;
+    text-align: center;
+    background-color: aqua;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+
+}

@@ -15,12 +15,12 @@ function App() {
       <Router>
       <div>
         <nav>
-          <ul>
-            <li>
-              <Link to="/login">Login Here</Link>
+          <ul className='nav-links d-flex mt-3'>
+            <li className='list-group-item'>
+              <div className='btn btn-primary fw-bold'><Link to="/login">Login Here</Link></div>
             </li>
-            <li>
-              <Link to="/signup">Sign Up</Link>
+            <li className='list-group-item'>
+              <div className='btn btn-primary fw-bold'><Link to="/signup">Sign Up</Link></div>
             </li>
           </ul>
         </nav>

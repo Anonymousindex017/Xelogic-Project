@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import '../css/Login.css'
 
 
@@ -18,8 +19,8 @@ const Login = () => {
                     <input type='password' id='#password' name='password' placeholder='Enter Your Password' required />
                 </div>
                 <div className='d-flex justify-content-center align-items-center'>
-                  <button className='btn btn-primary ms-5' type='submit'>Login</button>
-                <p className='text-center ps-5'>Forget Password ?</p>
+                  <Link to='/login'><button className='btn btn-primary ms-5' type='submit'>Login</button></Link>
+                <Link to="/" className='text-center ps-5'>Forget Password ?</Link>
                 </div>
             </form>
             </div>
