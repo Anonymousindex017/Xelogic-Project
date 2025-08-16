@@ -1,76 +1,42 @@
-import React from "react";
-import { Formik, Form, Field, ErrorMessage } from "formik";
-import { useState } from 'react';
-import * as Yup from "yup";
-import "../css/signup.css";
+import React from 'react'
+// import { useform } from 'react-hook-form'
+import '../css/SignUp.css'
+import { RiLockPasswordFill } from "react-icons/ri";
 
-// Validation Schema
-const validationSchema = Yup.object({
-  name: Yup.string().required("User name is required"),
-  email: Yup.string().email("Invalid email").required("Email is required"),
-  password: Yup.string().min(6, "Password must be at least 6 characters").required("Password is required"),
-  confirmPassword: Yup.string().oneOf([Yup.ref("password"), null], "Passwords must match").required("Confirm Password is required"),
-});
+
 
 const SignUp = () => {
 
   return (
-    <div className="signup-container container mb-5">
-      <div className="signup-form">
-        <h1 className="text-center fw-bolder">Sign Up</h1>
-
-        <Formik
-          //initialValues is here
-          initialValues={{
-            name: "",
-            email: "",
-            password: "",
-            confirmPassword: "",
-          }}
-
-          // form validation here
-          validationSchema={validationSchema}
-          onSubmit={(values) => {
-            console.log("Form Data:", values);
-          }}
-        >
-          {() => (
-            // start form here 
-            <Form>
-              <div className="signup-form-group">
-                <label htmlFor="name">User Name</label>
-                <Field type="text" id="name" name="name" placeholder="Enter Your Name" />
-                <ErrorMessage name="name" component="div" className="error" />
-              </div>
-
-              <div className="signup-form-group">
-                <label htmlFor="email">Email</label>
-                <Field type="email" id="email" name="email" placeholder="Enter Your Email" />
-                <ErrorMessage name="email" component="div" className="error" />
-              </div>
-
-              <div className="signup-form-group">
-                <label htmlFor="password">Password</label>
-                <Field type="password" id="password" name="password" placeholder="Enter Your Password" />
-                <ErrorMessage name="password" component="div" className="error" />
-              </div>
-
-              <div className="signup-form-group">
-                <label htmlFor="confirmPassword">Confirm Password</label>
-                <Field type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Your Password" />
-                <ErrorMessage name="confirmPassword" component="div" className="error" />
-              </div>
-
-              <button type="submit" className="btn btn-primary w-100">
-                Sign Up
-              </button>
-            </Form>
-          )}
-        </Formik>
+    <>
+      <div className='signup-mainpage'>
+        <div className='signup-form'>
+          <form>
+            <h1 className='text-center fw-bold'>Sign Up</h1>
+            <div className='signup-form-group'>
+              <label htmlFor="username ">Username:</label>
+              <input type="text" id="username" name="username" placeholder='Enter your username'/>
+            </div>
+            <div className='signup-form-group'>
+              <label htmlFor="email">Email:</label>
+              <input type="email" id="email" name="email" placeholder='Enter your email' />
+            </div>
+            <div className='signup-form-group'>
+              <label htmlFor="password">Password:</label>
+              <input type="password" id="password" name="password" placeholder='Enter your password'/><RiLockPasswordFill/>
+            </div>
+            <div className='signup-form-group'>
+              <label htmlFor="confirm-password">Confirm Password:</label>
+              <input type="password" id="confirm-password" name="confirm-password" placeholder='Confirm your password' />
+            </div>
+            <div className='signup-form-group'>
+              <button type="submit"  className='btn btn-primary text-center'>Sign Up</button>
+            </div>
+          </form>
+        </div>
       </div>
-    </div>
-  );
-};
+    </>
+  )
+}
 
-export default SignUp;
-
+export default SignUp
