@@ -5,7 +5,7 @@
 body{
     font-family: Arial, sans-serif;
     background-image: url('https://images6.alphacoders.com/755/755788.jpg');
-    background-size: cover;
+    /* background-size: cover; */
     background-repeat: no-repeat;
 }
 .login-form{
