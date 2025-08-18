@@ -54,5 +54,3 @@ const SignUp = () => {
 }
 
 export default SignUp
-
-// A password pattern that requires 8 characters, one uppercase, one lowercase, one number, and one special character
