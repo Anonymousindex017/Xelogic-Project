@@ -34,7 +34,9 @@ const SignUp = () => {
             </div>
             <div className='signup-form-group'>
               <label htmlFor="password"><RiLockPasswordFill />  Password :</label>
-              <input type="password" id="password" name="password" placeholder='Enter your password'{...register('password', { required: true, minLength:{ value: 8, message: "Password must be at least 8 characters" }, maxLength:{ value: 20, message: "Password must be at most 20 characters" }, pattern: { value: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/, message: "Password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, one number, and one special character" } })} />
+              <input type="password" id="password" name="password" placeholder='Enter your password'{...register('password',
+                {required: true, minLength:{ value: 8, message: "Password must be at least 8 characters" }, maxLength:{ value: 20, message: "Password must be at most 20 characters" },
+                pattern: { value: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/, message: "Password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, one number, and one special character" } })} />
               {errors.password && <p className='error-msg'>{errors.password.message}</p>}
             </div>
             <div className='signup-form-group'>
