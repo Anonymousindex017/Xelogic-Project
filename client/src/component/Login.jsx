@@ -13,7 +13,7 @@ const Login = () => {
                 <div className='form-group mt-5 d-flex'>
                     <label htmlFor='email'>Email :</label>
                     <input type='email' id='#email' name='email' placeholder='Enter Your Email' required />
-                </div>
+                </div>g/
                 <div className='form-group mt-5'>
                     <label htmlFor='password'>Password :</label>
                     <input type='password' id='#password' name='password' placeholder='Enter Your Password' required />
