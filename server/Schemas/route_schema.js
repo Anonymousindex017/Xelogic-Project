@@ -24,11 +24,11 @@ const datapatternschema = new mongoose.Schema({
 
     password: {
         type: String,
-        
+
     }
 
 });
 
-const mypattern = mongoose.model('mypattern', datapatternschema);
+const mypattern = mongoose.model('workers', datapatternschema);
 
 module.exports = mypattern;
