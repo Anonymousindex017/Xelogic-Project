@@ -3,9 +3,9 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Login from './component/Login.jsx'
-import SignUp from './component/SignUp.jsx'
-import Dashboard from './component/dashboard.jsx'
+import Login from './pages/Login.jsx'
+import SignUp from './pages/SignUp.jsx'
+import Dashboard from './pages/Dashboard.jsx'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 function App() {

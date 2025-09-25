@@ -1,6 +1,6 @@
 import React from 'react'
 // import { useform } from 'react-hook-form'
-import '../css/SignUp.css'
+import '../Style/SignUp.css'
 import { Link, Links } from "react-router";
 import { RiLockPasswordFill } from "react-icons/ri";
 import { IoMail } from "react-icons/io5";

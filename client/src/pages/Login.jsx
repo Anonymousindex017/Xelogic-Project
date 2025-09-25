@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import '../css/Login.css'
+import '../Style/Login.css'
 
 
 const Login = () => {
@@ -13,13 +13,13 @@ const Login = () => {
                 <div className='form-group mt-5 d-flex'>
                     <label htmlFor='email'>Email :</label>
                     <input type='email' id='#email' name='email' placeholder='Enter Your Email' required />
-                </div>g/
+                </div>
                 <div className='form-group mt-5'>
                     <label htmlFor='password'>Password :</label>
                     <input type='password' id='#password' name='password' placeholder='Enter Your Password' required />
                 </div>
                 <div className='d-flex justify-content-center align-items-center'>
-                  <Link to='/login'><button className='btn btn-primary ms-5' type='submit'>Login</button></Link>
+                  <Link to='/dashboard'><button className='btn btn-primary ms-5' type='submit'>Login</button></Link>
                 <Link to="/" className='text-center ps-5'>Forget Password ?</Link>
                 </div>
             </form>
